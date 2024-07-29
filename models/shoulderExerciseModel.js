@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const chestExerciseSchema = new mongoose.Schema({
+const shoulderExerciseSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -43,6 +43,6 @@ const chestExerciseSchema = new mongoose.Schema({
   }
 });
 
-const ChestExercise = mongoose.model('ChestExercise', chestExerciseSchema, 'chestexercises');
+const ShoulderExercise = mongoose.model('ShoulderExercise', shoulderExerciseSchema, 'shoulderexercises');
 
-module.exports = ChestExercise;
+module.exports = ShoulderExercise;
